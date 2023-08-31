@@ -16,9 +16,11 @@ public class _Main {
         arr1[7] = 1;
         arr1[8] = 14;
         arr1[9] = -5;
+
+        Utility utility = new Utility();
+        utility.sumNum (arr1);
     }
-    Utility utility = new Utility();
-    utility.sumNum (int [] arr1);
+
 
 
 
