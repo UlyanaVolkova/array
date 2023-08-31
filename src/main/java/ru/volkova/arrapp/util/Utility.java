@@ -10,4 +10,5 @@ public class Utility {
         }
         System.out.println("Сумма всех чисел массива = " + sum);
     }
+
 }
