@@ -19,6 +19,8 @@ public class _Main {
 
         Utility utility = new Utility();
         utility.sumNum (arr1);
+        utility.evenNumAmount(arr1);
+        utility.oddNumAmount(arr1);
     }
 
 
