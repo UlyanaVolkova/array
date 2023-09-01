@@ -25,8 +25,4 @@ public class _Main {
         utility.diffSumIndex(arr1);
         utility.zeroAmount(arr1);
     }
-
-
-
-
 }
