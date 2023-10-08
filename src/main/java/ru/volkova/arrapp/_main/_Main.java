@@ -4,21 +4,11 @@ import ru.volkova.arrapp.util.Utility;
 
 public class _Main {
 
-    public static void main(String [] args){
-        int [] arr1 = new int[10];
-        arr1[0] = 12;
-        arr1[1] = -3;
-        arr1[2] = 50;
-        arr1[3] = 7;
-        arr1[4] = -8;
-        arr1[5] = 33;
-        arr1[6] = 6;
-        arr1[7] = 1;
-        arr1[8] = 14;
-        arr1[9] = -5;
+    public static void main(String[] args) {
+        int[] arr1 = {12, -3, 50, 7, -8, 33, 6, 1, 14, -5};
 
         Utility utility = new Utility();
-        utility.sumNum (arr1);
+        utility.sumNum(arr1);
         utility.evenNumAmount(arr1);
         utility.oddNumAmount(arr1);
         utility.primeNumAmount(arr1);

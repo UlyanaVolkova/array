@@ -18,10 +18,8 @@ public class Utility {
             int num = arr1[index];
             if (num % 2 == 0) {
                 amount++;
-                index++;
-            } else {
-                index++;
             }
+            index++;
         }
         System.out.println("Количество всех чётных чисел = " + amount);
     }
@@ -31,12 +29,10 @@ public class Utility {
         int amount = 0;
         while (index < 10) {
             int num = arr1[index];
-            if (num % 2 == 0) {
-                index++;
-            } else {
+            if (num % 2 != 0) {
                 amount++;
-                index++;
             }
+            index++;
         }
         System.out.println("Количество всех нечётных чисел = " + amount);
     }
@@ -47,15 +43,12 @@ public class Utility {
         int i = 2;
         while (index < 10) {
             int num = arr1[index];
-            if (i <= num / 2 && num % i == 0) {
-                index++;
-                i++;
-            } else {
-                amount++;
-                index++;
-                i++;
+            if ( i<num || num%i!=0){
+                    amount++;
+                }
+            index++;
+            i++;
             }
-        }
         System.out.println("Количество всех простых чисел = " + amount);
     }
 
@@ -66,11 +59,10 @@ public class Utility {
         while (index < 10) {
             if (index % 2 == 0) {
                 sumEven = sumEven + arr1[index];
-                index++;
             } else {
                 sumOdd = sumOdd + arr1[index];
-                index++;
             }
+                index++;
         }
         int diff = sumEven - sumOdd;
         System.out.println("Разность сумм чисел с чётными и нечётными индексами равна = " + diff);
@@ -83,10 +75,8 @@ public class Utility {
             int num = arr1[index];
             if (num == 0) {
                 amount++;
-                index++;
-            } else {
-                index++;
             }
+            index++;
         }
         System.out.println("Количество раз, когда встречается 0 = " + amount);
     }
